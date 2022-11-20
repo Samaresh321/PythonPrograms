@@ -1,0 +1,22 @@
+1. Write a Python program to print "Hello Python".
+
+Code:
+print("Hello Python");
+
+2. Write a Python program to do arithmetical operations addition and division.
+
+num1=int(input('Enter first number:'));
+num2=int(input('Enter second number:'));
+
+print('Addition of num1 and num2 is=',(num1+num2));
+print('Division of num1 aand num2 is=',(num1/num2));
+
+
+## 3. Write a Python program to find the area of a triangle?
+## area = height*base/2
+
+base=int(input('Enter base of triangle:'));
+height=int(input('Enter height of triangle:'));
+area = height*base/2;
+print('Area of the triangle:',area);
+
