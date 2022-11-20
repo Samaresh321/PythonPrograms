@@ -43,3 +43,10 @@ O/P : Enter value of var1:123
       Enter value of var2:111
 Before swapping value of var1 and var2 : 123 111
 After swapping value of var1 and var2 : 111 123
+
+##  5. Write a Python program to generate a random number?
+
+Source code:
+
+import random
+print(random.randint(0,9));
