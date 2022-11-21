@@ -32,8 +32,59 @@ import calendar
 year=int(input('Enter a year :'))
 ## Enter a month input from user
 month=int(input('Enter a month :'))
-## print the calendar
+## print the calendar of a particular month of a year
 print(calendar.month(year, month))
+
+## to print whole year calender 
+
+print(calendar.calendar(year))
+
+# 4. Write a Python program to solve quadratic equation?
+
+## importing math function
+ 
+import math
+
+## Enter the coefficient  a, b and constant c
+
+a = int(input("Enter the coeff a: "))
+b = int(input("Enter the coeff b: "))
+c = int(input("Enter the constant c: "))
+
+d = (b**2) - (4*a*c)
+
+root1 = ((-1*b)+(math.sqrt(d))) / (2*a)
+root2 = ((-1*b)-(math.sqrt(d))) / (2*a)
+
+print('The solutions are: {0} and {1}'.format(root1, root2))
+    
+ O/P:
+ 
+Enter the coeff a: 1
+Enter the coeff b: -9
+Enter the constant c: 14
+The solutions are: 7.0 and 2.0
+
+
+5. Write a Python program to swap two variables without temp variable?
+
+a=int(input("Enter value of first variable: "))
+b=int(input("Enter value of second variable: "))
+
+print('Before swap: a = {} and b = {}'.format(a,b))
+
+a=a+b
+b=a-b
+a=a-b
+
+print('After swap: a = {} and b = {}'.format(a,b))
+
+O/P:
+Enter value of first variable: 6
+Enter value of second variable: 4
+Before swap: a = 6 and b = 4
+After swap: a = 4 and b = 6
+
 
 
 
