@@ -23,3 +23,17 @@ print('%0.1f Celcius is equal to %0.1f Fahrenheit '%(c,f))
 O/P: 
 Enter a value in celcius: 35
 35.0 Celcius is equal to 95.0 Fahrenheit 
+
+# 3. Write a Python program to display calendar? 
+
+# importing calendar module
+import calendar
+## Enter a year input from user
+year=int(input('Enter a year :'))
+## Enter a month input from user
+month=int(input('Enter a month :'))
+## print the calendar
+print(calendar.month(year, month))
+
+
+
