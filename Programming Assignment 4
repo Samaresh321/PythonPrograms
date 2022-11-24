@@ -51,3 +51,28 @@ while(fibo_length-2 > 0):
       b = nt
       fibo_length = fibo_length-1
 
+# 4. Write a Python Program to Check Armstrong Number?(Check it........)
+# number of nth digit which is equal to sum of nth power of its digit(abcd....n=a^n+b^n+c^n+d^n+....). 
+
+import math
+num = int(input("Enter a number: ")
+
+def fibo_check(num):
+## l = number of digits of number
+l = len(str(num)) 
+sum1 = 0 
+temp_num = num
+while(num > 0):
+   d = num % 10
+   sum1 += int(math.pow(d, l))
+   num = num // 10
+if(sum1 == int(temp_num)):
+   return 1
+else:
+   return 0
+
+if(fibo_check(num)):
+print("{} is an armstrong number".format(num))
+else:
+print("{} is not an armstrong number".format(num))
+
