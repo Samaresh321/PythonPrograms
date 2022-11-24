@@ -25,3 +25,13 @@ for i in range(num, 0, -1):
     
 
 print("Factorial of {} is : {}".format(num,fact))
+
+
+# 2. Write a Python Program to Display the multiplication Table?
+
+num=int(input("Enter a numer: "))
+
+for i in range(1, 11):
+
+    print("{} x {} = {}".format(num, i, num*i))
+
