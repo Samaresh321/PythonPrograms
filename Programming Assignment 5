@@ -43,8 +43,12 @@ def Conversion_Decimal(decimal):
 
 decimal=int(input("Enter a decimal number: "))
 Conversion_Decimal(decimal)
-
 # 4. Write a Python Program To Find ASCII value of a character?
-char=input("Enter a character : ")
-ASCII=ord(char)
-print("The ASCII value of char {} is {} ".format(char,ASCII))
+try: 
+  char=input("Enter a character : ")
+  ASCII=ord(char)
+  print("The ASCII value of char {} is {} ".format(char,ASCII))
+
+except Exception as e:
+    print("Exception is: ",e)
+
