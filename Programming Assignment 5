@@ -51,4 +51,34 @@ try:
 
 except Exception as e:
     print("Exception is: ",e)
+# 5. Write a Python Program to Make a Simple Calculator with 4 basic mathematical operations?"
 
+try:
+         while True:
+            num1 = int(input("Enter first number: "))
+            num2 = int(input("Enter second number: "))
+            
+            print("For addition:       +")
+            print("For subtraction:    -")
+            print("For multiplicaton:  *")
+            print("For division:       /")
+            print("For Exit:            X")
+            
+            ch = input("Enter the choice for mathematical operations: ")
+            
+            if ch == '+':
+                output = num1 + num2,
+            elif ch == '-':
+                output = num1 - num2
+            elif ch == '*':
+                output = num1 * num2
+            elif ch == '/':
+                output = num1 / num2
+            
+            if ch == 'X' or ch == 'x':
+                break
+            print("Result: ", output)
+            
+except Exception as e:
+            print(e)
+   
