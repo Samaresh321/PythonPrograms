@@ -1,1 +1,14 @@
 1. Write a Python Program to Display Fibonacci Sequence Using Recursion?
+
+def fibo(a,b,c):
+     if c > 0:
+        c -= 1
+        print(a, end='    ')  
+        temp = b
+        b = a + b
+        a = temp
+        fibo(a,b,c)
+
+
+fibo(0,1,10)
+   
