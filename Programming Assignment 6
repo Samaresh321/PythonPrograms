@@ -50,4 +50,16 @@ except Exception as e:
 else:
     print(math.log(num))
 
-   
+  
+  5. Write a Python Program for cube sum of first n natural numbers?
+  
+  def cubN(n):
+        return sum(range(n+1))**3
+
+
+print(cubN(5))
+  
+  
+  
+  
+  
