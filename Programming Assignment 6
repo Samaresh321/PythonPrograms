@@ -38,4 +38,16 @@ w=int(input("Enter the weight : "))
 x=bmi(h, w)
 
 print("Body Mass Index is :",x)
+
+4. Write a Python Program to calculate the natural logarithm of any number?
+
+import math
+    
+try:
+    num = int(input("Enter the number: "))
+except Exception as e:
+    print(e)
+else:
+    print(math.log(num))
+
    
