@@ -14,3 +14,10 @@ for i in l:
     if i > arrayMax :
           arrayMax = i 
 print(arrayMax)
+
+
+3. Write a Python Program for array rotation?
+
+l = [1,2,3,-412, 123, 369, 111]
+print("Rotated array: ")
+print(l[::-1])
