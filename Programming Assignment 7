@@ -7,3 +7,10 @@ for i in l:
  
 print("Sum of array:  ", arraySum)
   
+2. Write a Python Program to find largest element in an array? 
+l = [1,2,3,-412, 123, 369, 111] 
+arrayMax = 0 
+for i in l: 
+    if i > arrayMax :
+          arrayMax = i 
+print(arrayMax)
