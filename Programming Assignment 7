@@ -21,3 +21,19 @@ print(arrayMax)
 l = [1,2,3,-412, 123, 369, 111]
 print("Rotated array: ")
 print(l[::-1])
+
+4. Write a Python Program to Split the array and add the first part to the end?
+
+def splitAdd(l, split):
+    l = list
+    split = splitIndex
+    out = []
+    for i in range(len(l)):
+          index = (i+len(l)+split)%len(l)
+          out.append(l[index])
+    return out
+    
+    
+l = [1,2,3,-412, 123, 369, 111]
+splitIndex = 2
+print(splitAdd(l, splitIndex))
