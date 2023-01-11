@@ -37,3 +37,24 @@ def splitAdd(l, split):
 l = [1,2,3,-412, 123, 369, 111]
 splitIndex = 2
 print(splitAdd(l, splitIndex))
+
+
+5. Write a Python Program to check if given array is Monotonic? 
+
+
+def monotonicCheck(array):
+    flag = True
+    if array[0] >= array[len(array)-1]:
+          for i in range(len(array)-2):
+                if array[i] < array[i+1]:
+                    flag = False
+                else:
+                   for i in range(len(array)-2):
+                       if array[i] > array[i+1]:
+                           flag = False
+   
+    return flag
+ 
+ 
+array = [1,2,3,56, 124, 369]
+print(monotonicCheck(array))
