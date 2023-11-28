@@ -50,6 +50,22 @@ while(fibo_length-2 > 0):
       a = b
       b = nt
       fibo_length = fibo_length-1
+ OR 
+
+def fibbo(n):
+    a=0
+    b=1
+    print(a, end=' ')
+    print(b, end=' ')
+    for i in range(2,n):
+        c=a+b
+        print(c, end = ' ')
+        a=b
+        b=c
+                 
+n=int(input("enter the length of fibbo: "))
+fibbo(n)
+
 
 # 4. Write a Python Program to Check Armstrong Number?(Check it........)
 # number of nth digit which is equal to sum of nth power of its digit(abcd....n=a^n+b^n+c^n+d^n+....). 
