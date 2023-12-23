@@ -51,6 +51,56 @@ if is_binary:
 else:
     print("Not Binary")
 
+# 5. Write a Python program to find uncommon words from two Strings? 
+
+def task5(string1, string2):
+    
+    string1 = string1.split(' ')
+    string2 = string2.split(' ')
+    uncommon = []
+    
+    for i in set(string1):
+        if i not in string2:
+            uncommon.append(i)
+
+    for i in set(string2):
+        if i not in string1:
+            uncommon.append(i)
+    return uncommon
+            
+string1 = "Write a Python program to split and join a string"
+string2 = "Write a Python program to find uncommon words from two Strings"
+
+print(task5(string1, string2))
+
+
+# 6. Write a Python to find all duplicate characters in string? 
+
+def task6(string: str):
+    duplicate = []
+    for i in string:
+        if string.count(i) > 1:
+            duplicate.append(i)
+            
+    return set(duplicate)
+    
+n=task6("find all duplicate characters in string")
+print(n)
+
+
+# 7. Write a Python Program to check if a string contains any special character?  
+import re
+
+
+string = input("Enter a string: ")
+regex = re.compile('[@_!#$%^&*()<>?/\|}{~:]')  
+
+if(regex.search(string) == None):
+    print("Given string does not contain special characters")
+else:
+    print("Given string contains special characters")
+
+
 
 
 
