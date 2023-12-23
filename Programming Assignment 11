@@ -11,3 +11,74 @@ list_of_words = ['Apple', 'bananana', 'kiwi', 'berry', 'almond']
 k = 5
 
 print(task1(list_of_words, k))
+
+
+
+# 2. Write a Python program for removing i-th character from a string?
+
+def task2(string , i):
+    string = string.replace(string[i], '')
+    return string
+    
+string=input("Enter the string: ")
+num=int(input("Enter the number of the string want to replace: "))
+
+print(task2(string , num))
+
+
+3. Write a Python program to split and join a string?
+
+string = "Write a Python program to split and join a string?"
+
+split = string.split(' ')
+print(split)
+
+join = " ".join(split)
+print(join)
+
+# 4. Write a Python to check if a given string is binary string or not?
+
+string = input("Enter the string: ")
+binary = ['0', '1']
+
+is_binary = True
+for i in string:
+    if i not in binary:
+        is_binary = False
+    
+if is_binary:
+    print("Binary")
+else:
+    print("Not Binary")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
