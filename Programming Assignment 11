@@ -1,0 +1,13 @@
+# 1. Write a Python program to find words which are greater than given length k?
+
+def task1(list_of_words: list, k: int):
+    output = []
+    for i in list_of_words:
+        if len(i) > k:
+            output.append(i)
+            
+    return output
+list_of_words = ['Apple', 'bananana', 'kiwi', 'berry', 'almond']
+k = 5
+
+print(task1(list_of_words, k))
